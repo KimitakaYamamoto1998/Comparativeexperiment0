@@ -1,0 +1,56 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Brainstorming App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/note.css">
+
+  <!-- <script src="./tensorflow.js"></script> -->
+  <script src="./webgazer.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div id="skywayUI" 　class="app-wrapper">
+    <p id=id-label>ID: <span id="my-id">Your ID</span></p>
+    <div class="channel-group">
+      <input id="channel-name" type="text" placeholder="キーワード" />
+      <button id="join">参加</button>
+    </div>
+
+    <label class="switch">
+      <input type="checkbox" id="videoToggle">
+    </label>
+
+    <p id="status">カメラ OFF</p>
+    <video id="local-video" muted playsinline style="display: none;"></video>
+
+    <div id="remote-media-area"></div>
+    <div id="notesContainer"></div>
+    
+
+
+  </div>
+
+  <div id="notesContainer"></div>
+
+  <label class="switch">
+    <input type="checkbox" id="videoToggle">
+  </label>
+
+  <script src="https://cdn.jsdelivr.net/npm/@skyway-sdk/room/dist/skyway_room-latest.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/skyway-js"></script>
+  <script type="module" src="./js/note.js"></script>
+  <script type="module" src="main.js"></script>
+
+
+
+</body>
+
+</html>
