@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const gapX = 20;
     const gapY = 20;
 
-    const initialTexts = ["ペットボトルのカバー", "古くなった靴下を雑巾にする", "ビーズいれて，障害者（筋肉の緊張が過剰にかかる人）の手に握らせてクッション代わりにする", "ゆたんぽカバー", "中に重りを入れて護身用の武器にする", "履けなくなったら雑巾にする"];
+    const initialTexts = ["ペットボトルのカバー", "古くなった靴下を雑巾にする", "ビーズいれて，障害者（筋肉の緊張が過剰にかかる人）のためのクッション代わり", "ゆたんぽカバー", "中に重りを入れて護身用の武器にする", "履けなくなったら雑巾にする"];
 
     for (let i = 0; i < 6; i++) {
         const newNote = createStickyNote();
